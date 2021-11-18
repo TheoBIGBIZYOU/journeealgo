@@ -43,7 +43,7 @@ function init() {
         angleRayons: Math.PI * .5,
         // vue: view3D
     });
-    // grille.dessine();
+    grille.dessine();
     // mapCanvas.addEventListener("click", function(e)
     // {
     //     grille.newBlock(mapCanvas, e);
