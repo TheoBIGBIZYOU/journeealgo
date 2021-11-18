@@ -1,10 +1,16 @@
 {
+  "type": "module",
   "name": "journeealgo",
   "version": "1.0.0",
   "description": "",
   "main": "public/scripts/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "tsc",
+    "build:watch" : "tsc --watch",
+    "start:dev": "npm run clean && npm run build && run-p build:watch start",
+    "clean": "rimraf public/scripts/",
+    "start": "node public/scripts/index.js"
   },
   "author": "",
   "license": "ISC",
