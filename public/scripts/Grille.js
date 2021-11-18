@@ -56,14 +56,5 @@ export class Grille {
         this.dessineGrille();
         this.dessineBlocks();
     }
-    newBlock(canvas, event) {
-        let rect = canvas.getBoundingClientRect();
-        let x = event.clientX - rect.left;
-        let y = event.clientY - rect.top;
-        let nbblockx = Math.floor(x / this.blockWidth);
-        let nbblocky = Math.floor(y / this.blockHeight);
-        this.blockStyles[this._data[nbblockx][nbblocky]] = "1";
-        console.log("ttt " + this.blockStyles[this._data[nbblockx][nbblocky]]);
-    }
 }
 //# sourceMappingURL=Grille.js.map

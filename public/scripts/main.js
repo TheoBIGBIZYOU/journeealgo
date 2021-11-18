@@ -43,10 +43,11 @@ function init() {
         angleRayons: Math.PI * .5,
         // vue: view3D
     });
-    grille.dessine();
-    mapCanvas.addEventListener("click", function (e) {
-        grille.newBlock(mapCanvas, e);
-    });
+    // grille.dessine();
+    // mapCanvas.addEventListener("click", function(e)
+    // {
+    //     grille.newBlock(mapCanvas, e);
+    // });
 }
 init();
 //# sourceMappingURL=main.js.map
